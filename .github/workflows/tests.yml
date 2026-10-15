@@ -1,0 +1,43 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Read-only: this workflow must never touch the published biometric vault.
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install test dependencies
+        run: pip install cryptography garminconnect
+
+      - name: Run pipeline unit tests
+        run: python -m unittest discover -s tests -t . -v
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check frontend inline scripts parse
+        run: node tests/check_frontend_syntax.mjs index.html
+
+      - name: Run the sync relay against a stubbed GitHub
+        run: node tests/check_relay.mjs
+
+      - name: Verify the public synthetic demo fixture
+        run: python -c "import json; data=json.load(open('data/demo.json', encoding='utf-8')); assert data['demo']['synthetic'] is True"

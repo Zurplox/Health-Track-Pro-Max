@@ -1,0 +1,4747 @@
+{
+  "updated_at": "2025-01-31T08:00:00+00:00",
+  "policy": {
+    "day_strain": {
+      "scale_max": 21.0
+    },
+    "freshness": {
+      "stale_after_hours": 30
+    },
+    "acwr": {
+      "scale_max": 2.0,
+      "bands": [
+        {
+          "key": "under",
+          "from": 0.0,
+          "to": 0.8,
+          "label": "Fresh / Under-trained",
+          "tone": "cyan",
+          "plain": "you have room to add training, and little injury risk in doing so"
+        },
+        {
+          "key": "sweet",
+          "from": 0.8,
+          "to": 1.3,
+          "label": "Sweet Spot",
+          "tone": "green",
+          "plain": "this is the range where fitness improves fastest with the least injury risk"
+        },
+        {
+          "key": "high",
+          "from": 1.3,
+          "to": 1.5,
+          "label": "High",
+          "tone": "amber",
+          "plain": "your load has risen faster than your body has adapted, so hold volume steady for a few days"
+        },
+        {
+          "key": "danger",
+          "from": 1.5,
+          "to": 2.0,
+          "label": "Danger Zone",
+          "tone": "rose",
+          "plain": "this is the load pattern that usually comes before an injury, so cut volume now"
+        }
+      ]
+    }
+  },
+  "athlete": {
+    "name": "Demo Athlete",
+    "display_name": "demo-athlete",
+    "chronological_age": 35,
+    "fitness_age": 33.0,
+    "primary_device": "Demo Watch"
+  },
+  "today": {
+    "date": "2025-01-31",
+    "sleep_score": 78,
+    "sleep_time_seconds": 27000,
+    "deep_sleep_seconds": 5940,
+    "rem_sleep_seconds": 4860,
+    "light_sleep_seconds": 16200,
+    "awake_sleep_seconds": 0,
+    "sleep_stress": 18.0,
+    "respiration_rate": 13.0,
+    "lowest_respiration": 9.0,
+    "hrv_last_night": 54,
+    "hrv_weekly_avg": 55,
+    "hrv_status": "BALANCED",
+    "hrv_baseline_low": 54,
+    "hrv_baseline_high": 73,
+    "rhr": 58.0,
+    "rhr_tier": "athletic",
+    "rhr_tier_label": "ATHLETIC",
+    "rhr_tier_tone": "green",
+    "body_battery_charged": 44,
+    "body_battery_drained": 21,
+    "stress_avg": 21.9,
+    "stress_distribution": {
+      "rest_pct": 90,
+      "low_pct": 10,
+      "med_pct": 0,
+      "high_pct": 0,
+      "samples": 80,
+      "band": "rest"
+    },
+    "steps": 7800
+  },
+  "fitness": {
+    "fitness_age": 33.0,
+    "chronological_age": 35,
+    "achievable_fitness_age": 31.0,
+    "device_name": "Demo Watch",
+    "training_status": "Maintaining",
+    "acute_load": 48,
+    "chronic_load": 180,
+    "acwr": 0.27,
+    "acwr_status": "LOW",
+    "acwr_band": "under",
+    "acwr_band_label": "Fresh / Under-trained",
+    "acwr_band_tone": "cyan",
+    "age_advantage": "younger",
+    "age_advantage_years": 2.0,
+    "age_advantage_label": "2.0 yrs younger",
+    "age_advantage_tone": "emerald"
+  },
+  "whoop": {
+    "day_strain": 6.8,
+    "target_strain_min": 13.0,
+    "target_strain_max": 17.5,
+    "strain_zone": "Optimal Overreach (Green Recovery)",
+    "strain_advice": "Green recovery confirms high nervous system capacity. Push intensity with heavy intervals or strength work.",
+    "sleep_performance_pct": 89,
+    "sleep_efficiency_pct": 100,
+    "sleep_consistency_pct": 93,
+    "baseline_sleep_need_hours": 7.5,
+    "sleep_debt_minutes": 30,
+    "accumulated_7d_debt_hours": 1.5,
+    "strain_sleep_need_minutes": 21,
+    "total_sleep_need_hours": 8.3,
+    "total_sleep_need_formatted": "8h 21m",
+    "recommended_bedtime": "10:19 PM UTC",
+    "recommended_bedtime_minutes": 1339,
+    "recommended_wake_time": "7:00 AM UTC",
+    "recommended_wake_minutes": 420
+  },
+  "fitbit": {
+    "daily_readiness_score": 80,
+    "readiness_category": "Good (Primed for Activity)",
+    "hrv_component_score": 77,
+    "sleep_component_score": 78,
+    "fatigue_component_score": 90,
+    "health_metrics_5_pillars": [
+      {
+        "name": "Breathing Rate",
+        "key": "breathing_rate",
+        "value": 13.0,
+        "unit": "brpm",
+        "baseline": 13.0,
+        "range_min": 11.5,
+        "range_max": 14.5,
+        "status": "In Range",
+        "status_color": "emerald",
+        "description": "Nocturnal breathing rate against the normal 11.5-14.5 brpm band."
+      },
+      {
+        "name": "Heart Rate Variability",
+        "key": "hrv",
+        "value": 54,
+        "unit": "ms",
+        "baseline": 55.5,
+        "range_min": 54,
+        "range_max": 73,
+        "status": "Below Baseline",
+        "status_color": "amber",
+        "description": "-2.7% versus the 30-day baseline of 55.5 ms."
+      },
+      {
+        "name": "Sleep Autonomic Stress",
+        "key": "sleep_stress",
+        "value": 18.0,
+        "unit": "/100",
+        "baseline": 20.0,
+        "range_min": 10.0,
+        "range_max": 25.0,
+        "status": "Restorative",
+        "status_color": "emerald",
+        "description": "Autonomic disruption during slow-wave and REM cycles."
+      },
+      {
+        "name": "Resting Heart Rate",
+        "key": "rhr",
+        "value": 58.0,
+        "unit": "bpm",
+        "baseline": 57.8,
+        "range_min": 48.0,
+        "range_max": 54.0,
+        "status": "Normal Rhythm",
+        "status_color": "emerald",
+        "description": "+0.2 bpm versus the 30-day baseline."
+      },
+      {
+        "name": "Cardio Fitness (Fitness Age)",
+        "key": "fitness_age",
+        "value": 33.0,
+        "unit": "yrs",
+        "baseline": 35,
+        "range_min": 31.0,
+        "range_max": 35,
+        "status": "Elite (2.0 yrs younger)",
+        "status_color": "cyan",
+        "description": "Aerobic and recovery capacity against chronological age."
+      }
+    ]
+  },
+  "garmin_signature": {
+    "body_battery_charged": 44,
+    "body_battery_drained": 21,
+    "body_battery_band": "full",
+    "body_battery_badge": "FULLY RECHARGED",
+    "body_battery_tone": "green",
+    "stress_avg": 21.9,
+    "stress_band": "rest",
+    "stress_label": "REST",
+    "stress_tone": "green",
+    "stress_distribution": {
+      "rest_pct": 90,
+      "low_pct": 10,
+      "med_pct": 0,
+      "high_pct": 0,
+      "samples": 80,
+      "band": "rest"
+    },
+    "stress_distribution_source": "measured",
+    "circadian": {
+      "sleep_cycles_completed": 5.0,
+      "available": true,
+      "optimal_melatonin_window": "10:15 PM — 10:45 PM UTC",
+      "melatonin_window_minutes": [
+        1335,
+        1365
+      ],
+      "circadian_alignment_pct": 100,
+      "onset_median_clock": "11:00 PM",
+      "onset_std_dev_minutes": 0,
+      "onsets_analysed": 21
+    }
+  },
+  "readiness": {
+    "score": 99,
+    "band": "prime",
+    "badge": "PRIME",
+    "tone": "green",
+    "text": "Your body is primed. This is a great day for high-intensity training, PR attempts, or competitions.",
+    "briefing": "prime for peak training",
+    "body_battery_charged": 44,
+    "hrv_delta_pct": -2.7,
+    "hrv_baseline": 55.5,
+    "hrv_tone": "amber",
+    "workload_band": "Fresh / Under-trained",
+    "acwr": 0.27,
+    "sleep_debt_hours": 1.5
+  },
+  "injury_risk": {
+    "pct": 5,
+    "band": "low",
+    "badge": "LOW",
+    "tone": "green",
+    "factors": [
+      {
+        "label": "Workload Spike",
+        "value": "Fresh — ACWR 0.3",
+        "tone": "cyan",
+        "note": "Low recent load; rebuild volume gradually."
+      },
+      {
+        "label": "HRV Trend",
+        "value": "Below baseline (-2.7%)",
+        "tone": "amber",
+        "note": "Slightly suppressed; monitor fatigue over the next days."
+      },
+      {
+        "label": "Sleep Debt",
+        "value": "Low (1.5h)",
+        "tone": "green",
+        "note": "Sleep debt is contained; recovery capacity is intact."
+      },
+      {
+        "label": "Recovery Score",
+        "value": "Green Zone (99%)",
+        "tone": "green",
+        "note": "Body well-recovered. Low systemic strain."
+      }
+    ]
+  },
+  "baselines": {
+    "rhr_7d": 57.6,
+    "rhr_30d": 57.8,
+    "rhr_180d": 57.7,
+    "rhr_all_time": 57.7,
+    "rhr_yearly": {
+      "2024": 57.8,
+      "2025": 57.7
+    },
+    "rhr_total_days": 123,
+    "rhr_months_tracked": 4,
+    "hrv_7d": 55.6,
+    "hrv_30d": 55.5,
+    "hrv_180d": 55.4,
+    "hrv_all_time": 55.4,
+    "hrv_normal_range": [
+      54,
+      73
+    ],
+    "sleep_score_30d": 81.5,
+    "sleep_score_180d": 81.4,
+    "sleep_duration_avg_30d_hours": 7.4,
+    "sleep_duration_avg_7d_hours": 7.3,
+    "sleep_duration_avg_180d_hours": 7.4,
+    "deep_sleep_pct_30d": 22.0,
+    "deep_sleep_pct_180d": 22.0,
+    "rem_sleep_pct_30d": 18.0,
+    "respiration_avg_30d": 13.0
+  },
+  "history": {
+    "daily_sleep": [
+      {
+        "date": "2024-10-01",
+        "score": 76,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-02",
+        "score": 77,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-03",
+        "score": 78,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-04",
+        "score": 79,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-05",
+        "score": 80,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-06",
+        "score": 81,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-07",
+        "score": 82,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-08",
+        "score": 83,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-09",
+        "score": 84,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-10",
+        "score": 85,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-11",
+        "score": 86,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-12",
+        "score": 87,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-13",
+        "score": 76,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-14",
+        "score": 77,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-15",
+        "score": 78,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-16",
+        "score": 79,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-17",
+        "score": 80,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-18",
+        "score": 81,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-19",
+        "score": 82,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-20",
+        "score": 83,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-21",
+        "score": 84,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-22",
+        "score": 85,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-23",
+        "score": 86,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-24",
+        "score": 87,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-25",
+        "score": 76,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-26",
+        "score": 77,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-27",
+        "score": 78,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-28",
+        "score": 79,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-29",
+        "score": 80,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-30",
+        "score": 81,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-10-31",
+        "score": 82,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-01",
+        "score": 83,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-02",
+        "score": 84,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-03",
+        "score": 85,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-04",
+        "score": 86,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-05",
+        "score": 87,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-06",
+        "score": 76,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-07",
+        "score": 77,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-08",
+        "score": 78,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-09",
+        "score": 79,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-10",
+        "score": 80,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-11",
+        "score": 81,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-12",
+        "score": 82,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-13",
+        "score": 83,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-14",
+        "score": 84,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-15",
+        "score": 85,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-16",
+        "score": 86,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-17",
+        "score": 87,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-18",
+        "score": 76,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-19",
+        "score": 77,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-20",
+        "score": 78,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-21",
+        "score": 79,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-22",
+        "score": 80,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-23",
+        "score": 81,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-24",
+        "score": 82,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-25",
+        "score": 83,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-26",
+        "score": 84,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-27",
+        "score": 85,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-28",
+        "score": 86,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-29",
+        "score": 87,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-11-30",
+        "score": 76,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-01",
+        "score": 77,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-02",
+        "score": 78,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-03",
+        "score": 79,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-04",
+        "score": 80,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-05",
+        "score": 81,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-06",
+        "score": 82,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-07",
+        "score": 83,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-08",
+        "score": 84,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-09",
+        "score": 85,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-10",
+        "score": 86,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-11",
+        "score": 87,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-12",
+        "score": 76,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-13",
+        "score": 77,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-14",
+        "score": 78,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-15",
+        "score": 79,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-16",
+        "score": 80,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-17",
+        "score": 81,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-18",
+        "score": 82,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-19",
+        "score": 83,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-20",
+        "score": 84,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-21",
+        "score": 85,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-22",
+        "score": 86,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-23",
+        "score": 87,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-24",
+        "score": 76,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-25",
+        "score": 77,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-26",
+        "score": 78,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-27",
+        "score": 79,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-28",
+        "score": 80,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-29",
+        "score": 81,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-30",
+        "score": 82,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2024-12-31",
+        "score": 83,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-01",
+        "score": 84,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-02",
+        "score": 85,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-03",
+        "score": 86,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-04",
+        "score": 87,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-05",
+        "score": 76,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-06",
+        "score": 77,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-07",
+        "score": 78,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-08",
+        "score": 79,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-09",
+        "score": 80,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-10",
+        "score": 81,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-11",
+        "score": 82,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-12",
+        "score": 83,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-13",
+        "score": 84,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-14",
+        "score": 85,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-15",
+        "score": 86,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-16",
+        "score": 87,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-17",
+        "score": 76,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-18",
+        "score": 77,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-19",
+        "score": 78,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-20",
+        "score": 79,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-21",
+        "score": 80,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-22",
+        "score": 81,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-23",
+        "score": 82,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-24",
+        "score": 83,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-25",
+        "score": 84,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-26",
+        "score": 85,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-27",
+        "score": 86,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-28",
+        "score": 87,
+        "total_seconds": 27900,
+        "deep_seconds": 6138,
+        "rem_seconds": 5022,
+        "light_seconds": 16740,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-29",
+        "score": 76,
+        "total_seconds": 25200,
+        "deep_seconds": 5544,
+        "rem_seconds": 4536,
+        "light_seconds": 15120,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-30",
+        "score": 77,
+        "total_seconds": 26100,
+        "deep_seconds": 5742,
+        "rem_seconds": 4698,
+        "light_seconds": 15660,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      },
+      {
+        "date": "2025-01-31",
+        "score": 78,
+        "total_seconds": 27000,
+        "deep_seconds": 5940,
+        "rem_seconds": 4860,
+        "light_seconds": 16200,
+        "awake_seconds": 0,
+        "avg_stress": 18.0,
+        "avg_respiration": 13.0,
+        "lowest_respiration": 9.0,
+        "bedtime_minutes": 1380
+      }
+    ],
+    "daily_hrv": [
+      {
+        "date": "2024-10-01",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 52.0,
+        "delta_pct": 0.0,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-02",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 52.5,
+        "delta_pct": 1.0,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-03",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 53.0,
+        "delta_pct": 1.9,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-04",
+        "lastNightAvg": 55,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 53.5,
+        "delta_pct": 2.8,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-05",
+        "lastNightAvg": 56,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 54.0,
+        "delta_pct": 3.7,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-06",
+        "lastNightAvg": 57,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 54.5,
+        "delta_pct": 4.6,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-07",
+        "lastNightAvg": 58,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.0,
+        "delta_pct": 5.5,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-08",
+        "lastNightAvg": 59,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": 6.3,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-09",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.1,
+        "delta_pct": -5.6,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-10-10",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 54.9,
+        "delta_pct": -3.5,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-10-11",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 54.8,
+        "delta_pct": -1.5,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-10-12",
+        "lastNightAvg": 55,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 54.8,
+        "delta_pct": 0.4,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-13",
+        "lastNightAvg": 56,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 54.9,
+        "delta_pct": 2.0,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-14",
+        "lastNightAvg": 57,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.1,
+        "delta_pct": 3.4,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-15",
+        "lastNightAvg": 58,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": 4.9,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-16",
+        "lastNightAvg": 59,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": 6.3,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-17",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": -6.0,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-10-18",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.2,
+        "delta_pct": -4.0,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-10-19",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.1,
+        "delta_pct": -2.0,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-10-20",
+        "lastNightAvg": 55,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.1,
+        "delta_pct": -0.2,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-10-21",
+        "lastNightAvg": 56,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.1,
+        "delta_pct": 1.6,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-22",
+        "lastNightAvg": 57,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.2,
+        "delta_pct": 3.3,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-23",
+        "lastNightAvg": 58,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": 4.9,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-24",
+        "lastNightAvg": 59,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": 6.3,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-25",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": -6.1,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-10-26",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": -4.2,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-10-27",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.2,
+        "delta_pct": -2.2,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-10-28",
+        "lastNightAvg": 55,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.2,
+        "delta_pct": -0.4,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-10-29",
+        "lastNightAvg": 56,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.2,
+        "delta_pct": 1.4,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-30",
+        "lastNightAvg": 57,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": 3.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-10-31",
+        "lastNightAvg": 58,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": 4.5,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-11-01",
+        "lastNightAvg": 59,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.7,
+        "delta_pct": 5.9,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-11-02",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -6.5,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-03",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -4.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-04",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": -2.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-05",
+        "lastNightAvg": 55,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": -0.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-06",
+        "lastNightAvg": 56,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": 1.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-11-07",
+        "lastNightAvg": 57,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": 3.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-11-08",
+        "lastNightAvg": 58,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": 4.5,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-11-09",
+        "lastNightAvg": 59,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.7,
+        "delta_pct": 5.9,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-11-10",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -6.5,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-11",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -4.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-12",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": -2.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-13",
+        "lastNightAvg": 55,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": -0.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-14",
+        "lastNightAvg": 56,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": 1.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-11-15",
+        "lastNightAvg": 57,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": 3.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-11-16",
+        "lastNightAvg": 58,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": 4.5,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-11-17",
+        "lastNightAvg": 59,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.7,
+        "delta_pct": 5.9,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-11-18",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -6.5,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-19",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -4.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-20",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": -2.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-21",
+        "lastNightAvg": 55,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": -0.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-22",
+        "lastNightAvg": 56,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": 1.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-11-23",
+        "lastNightAvg": 57,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": 3.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-11-24",
+        "lastNightAvg": 58,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": 4.5,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-11-25",
+        "lastNightAvg": 59,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.7,
+        "delta_pct": 5.9,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-11-26",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -6.5,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-27",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -4.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-28",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": -2.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-29",
+        "lastNightAvg": 55,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": -0.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-11-30",
+        "lastNightAvg": 56,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": 1.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-01",
+        "lastNightAvg": 57,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": 3.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-02",
+        "lastNightAvg": 58,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": 4.5,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-03",
+        "lastNightAvg": 59,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.7,
+        "delta_pct": 5.9,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-04",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -6.5,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-12-05",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -4.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-12-06",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": -2.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-12-07",
+        "lastNightAvg": 55,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": -0.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-12-08",
+        "lastNightAvg": 56,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": 1.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-09",
+        "lastNightAvg": 57,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": 3.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-10",
+        "lastNightAvg": 58,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": 4.5,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-11",
+        "lastNightAvg": 59,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.7,
+        "delta_pct": 5.9,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-12",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -6.5,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-12-13",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -4.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-12-14",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": -2.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-12-15",
+        "lastNightAvg": 55,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": -0.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-12-16",
+        "lastNightAvg": 56,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": 1.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-17",
+        "lastNightAvg": 57,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": 3.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-18",
+        "lastNightAvg": 58,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": 4.5,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-19",
+        "lastNightAvg": 59,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.7,
+        "delta_pct": 5.9,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-20",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -6.5,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-12-21",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -4.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-12-22",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": -2.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-12-23",
+        "lastNightAvg": 55,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": -0.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-12-24",
+        "lastNightAvg": 56,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": 1.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-25",
+        "lastNightAvg": 57,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": 3.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-26",
+        "lastNightAvg": 58,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": 4.5,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-27",
+        "lastNightAvg": 59,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.7,
+        "delta_pct": 5.9,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2024-12-28",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -6.5,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-12-29",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -4.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-12-30",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": -2.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2024-12-31",
+        "lastNightAvg": 55,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": -0.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2025-01-01",
+        "lastNightAvg": 56,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": 1.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-02",
+        "lastNightAvg": 57,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": 3.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-03",
+        "lastNightAvg": 58,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": 4.5,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-04",
+        "lastNightAvg": 59,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.7,
+        "delta_pct": 5.9,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-05",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -6.5,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2025-01-06",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -4.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2025-01-07",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": -2.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2025-01-08",
+        "lastNightAvg": 55,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": -0.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2025-01-09",
+        "lastNightAvg": 56,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": 1.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-10",
+        "lastNightAvg": 57,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": 3.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-11",
+        "lastNightAvg": 58,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": 4.5,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-12",
+        "lastNightAvg": 59,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.7,
+        "delta_pct": 5.9,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-13",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -6.5,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2025-01-14",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -4.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2025-01-15",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": -2.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2025-01-16",
+        "lastNightAvg": 55,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": -0.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2025-01-17",
+        "lastNightAvg": 56,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": 1.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-18",
+        "lastNightAvg": 57,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": 3.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-19",
+        "lastNightAvg": 58,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": 4.5,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-20",
+        "lastNightAvg": 59,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.7,
+        "delta_pct": 5.9,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-21",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -6.5,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2025-01-22",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -4.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2025-01-23",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": -2.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2025-01-24",
+        "lastNightAvg": 55,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": -0.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2025-01-25",
+        "lastNightAvg": 56,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.4,
+        "delta_pct": 1.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-26",
+        "lastNightAvg": 57,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.3,
+        "delta_pct": 3.1,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-27",
+        "lastNightAvg": 58,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": 4.5,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-28",
+        "lastNightAvg": 59,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.7,
+        "delta_pct": 5.9,
+        "band": "above",
+        "band_label": "Resilient (Balanced)",
+        "tone": "green"
+      },
+      {
+        "date": "2025-01-29",
+        "lastNightAvg": 52,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -6.5,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2025-01-30",
+        "lastNightAvg": 53,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.6,
+        "delta_pct": -4.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      },
+      {
+        "date": "2025-01-31",
+        "lastNightAvg": 54,
+        "weeklyAvg": 55,
+        "status": "BALANCED",
+        "baseline": 55.5,
+        "delta_pct": -2.7,
+        "band": "near",
+        "band_label": "Below Baseline",
+        "tone": "amber"
+      }
+    ],
+    "daily_rhr": [
+      {
+        "date": "2024-10-01",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-10-02",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-10-03",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-10-04",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-10-05",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-10-06",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-10-07",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-10-08",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-10-09",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-10-10",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-10-11",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-10-12",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-10-13",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-10-14",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-10-15",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-10-16",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-10-17",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-10-18",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-10-19",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-10-20",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-10-21",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-10-22",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-10-23",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-10-24",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-10-25",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-10-26",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-10-27",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-10-28",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-10-29",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-10-30",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-10-31",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-11-01",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-11-02",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-11-03",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-11-04",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-11-05",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-11-06",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-11-07",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-11-08",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-11-09",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-11-10",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-11-11",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-11-12",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-11-13",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-11-14",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-11-15",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-11-16",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-11-17",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-11-18",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-11-19",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-11-20",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-11-21",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-11-22",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-11-23",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-11-24",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-11-25",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-11-26",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-11-27",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-11-28",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-11-29",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-11-30",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-12-01",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-12-02",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-12-03",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-12-04",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-12-05",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-12-06",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-12-07",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-12-08",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-12-09",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-12-10",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-12-11",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-12-12",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-12-13",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-12-14",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-12-15",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-12-16",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-12-17",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-12-18",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-12-19",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-12-20",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-12-21",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-12-22",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-12-23",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-12-24",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-12-25",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-12-26",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-12-27",
+        "rhr": 58.5
+      },
+      {
+        "date": "2024-12-28",
+        "rhr": 57.0
+      },
+      {
+        "date": "2024-12-29",
+        "rhr": 57.5
+      },
+      {
+        "date": "2024-12-30",
+        "rhr": 58.0
+      },
+      {
+        "date": "2024-12-31",
+        "rhr": 58.5
+      },
+      {
+        "date": "2025-01-01",
+        "rhr": 57.0
+      },
+      {
+        "date": "2025-01-02",
+        "rhr": 57.5
+      },
+      {
+        "date": "2025-01-03",
+        "rhr": 58.0
+      },
+      {
+        "date": "2025-01-04",
+        "rhr": 58.5
+      },
+      {
+        "date": "2025-01-05",
+        "rhr": 57.0
+      },
+      {
+        "date": "2025-01-06",
+        "rhr": 57.5
+      },
+      {
+        "date": "2025-01-07",
+        "rhr": 58.0
+      },
+      {
+        "date": "2025-01-08",
+        "rhr": 58.5
+      },
+      {
+        "date": "2025-01-09",
+        "rhr": 57.0
+      },
+      {
+        "date": "2025-01-10",
+        "rhr": 57.5
+      },
+      {
+        "date": "2025-01-11",
+        "rhr": 58.0
+      },
+      {
+        "date": "2025-01-12",
+        "rhr": 58.5
+      },
+      {
+        "date": "2025-01-13",
+        "rhr": 57.0
+      },
+      {
+        "date": "2025-01-14",
+        "rhr": 57.5
+      },
+      {
+        "date": "2025-01-15",
+        "rhr": 58.0
+      },
+      {
+        "date": "2025-01-16",
+        "rhr": 58.5
+      },
+      {
+        "date": "2025-01-17",
+        "rhr": 57.0
+      },
+      {
+        "date": "2025-01-18",
+        "rhr": 57.5
+      },
+      {
+        "date": "2025-01-19",
+        "rhr": 58.0
+      },
+      {
+        "date": "2025-01-20",
+        "rhr": 58.5
+      },
+      {
+        "date": "2025-01-21",
+        "rhr": 57.0
+      },
+      {
+        "date": "2025-01-22",
+        "rhr": 57.5
+      },
+      {
+        "date": "2025-01-23",
+        "rhr": 58.0
+      },
+      {
+        "date": "2025-01-24",
+        "rhr": 58.5
+      },
+      {
+        "date": "2025-01-25",
+        "rhr": 57.0
+      },
+      {
+        "date": "2025-01-26",
+        "rhr": 57.5
+      },
+      {
+        "date": "2025-01-27",
+        "rhr": 58.0
+      },
+      {
+        "date": "2025-01-28",
+        "rhr": 58.5
+      },
+      {
+        "date": "2025-01-29",
+        "rhr": 57.0
+      },
+      {
+        "date": "2025-01-30",
+        "rhr": 57.5
+      },
+      {
+        "date": "2025-01-31",
+        "rhr": 58.0
+      }
+    ],
+    "rhr_multi_year": [
+      {
+        "month": "2024-10",
+        "year": "2024",
+        "rhr": 57.7
+      },
+      {
+        "month": "2024-11",
+        "year": "2024",
+        "rhr": 57.8
+      },
+      {
+        "month": "2024-12",
+        "year": "2024",
+        "rhr": 57.8
+      },
+      {
+        "month": "2025-01",
+        "year": "2025",
+        "rhr": 57.7
+      }
+    ],
+    "activities": [
+      {
+        "activityId": 1001,
+        "activityName": "Demo Run",
+        "activityType": "running",
+        "category": "Running",
+        "startTimeLocal": "2025-01-30 07:15:00",
+        "locationName": "Example Park",
+        "startLatitude": null,
+        "startLongitude": null,
+        "elevationGain": 48.0,
+        "steps": 5200,
+        "distance_km": 5.2,
+        "duration_min": 32.0,
+        "calories": 360,
+        "averageHR": 142,
+        "maxHR": 165,
+        "aerobicTrainingEffect": 2.4,
+        "anaerobicTrainingEffect": 0.2,
+        "exercise_sets": null
+      }
+    ]
+  },
+  "clinical_intelligence": {
+    "recovery_score": 99,
+    "recovery_band": "green",
+    "recovery_tone": "green",
+    "recovery_zone": "GREEN (OPTIMAL RECOVERY)",
+    "recovery_briefing": "Green (optimal)",
+    "narrative_source": "deterministic",
+    "score_source": "deterministic",
+    "illness_early_warning": {
+      "risk_level": "LOW",
+      "risk_tone": "green",
+      "status_headline": "Immune Vitals Normal (No Inflammatory or Infection Markers)",
+      "delta_rhr_bpm": 0.2,
+      "delta_hrv_pct": -2.7,
+      "sleep_stress": 18.0,
+      "respiration_rate": 13.0,
+      "details": [
+        "RHR deviation is minimal (+0.2 bpm) and HRV sits -2.7% versus baseline. Nocturnal respiratory rate (13.0 brpm) and sleep stress (18.0/100) show no immune activation."
+      ]
+    },
+    "sleep_architecture_analysis": "Sleep architecture shows Deep Sleep at 22.0% (1h 39m) -- above your 6-month baseline of 22.0% for muscular and tissue repair. REM Sleep (the dreaming stage that consolidates memory) logged at 18.0% (1h 21m), above the 16% reference, with 0 min of debt against the 7.5h target. Nightly stress at 18.0/100.\n\nYou slept 7.5 hours. Deep tissue-repair sleep was 22.0% of the night, above your 22% baseline, and memory-forming REM sleep was 18.0%, above the 16% reference. You reached your sleep-length target, so nothing here needs fixing tonight.",
+    "autonomic_nervous_analysis": "Autonomic tone is Below Baseline: overnight heart rate variability (HRV) averaged 54 ms (-2.7% versus your 30-day baseline of 55.5 ms and 6-month baseline of 55.4 ms), against a normal physiological band of 54-73 ms. Resting heart rate (RHR) moved +0.2 bpm versus its 30-day baseline.\n\nYour overnight recovery signal reads 54 ms against your own 30-day average of 55.5 ms, so this is an ordinary day-to-day dip -- train as planned, but do not chase a personal best.",
+    "workload_and_biological_age": "Biological Fitness Age stands at 33.0 years -- operating 2.0 years versus your chronological age of 35. Acute-to-Chronic Workload Ratio (ACWR) is 0.27 with an Acute Load of 48 against a Chronic Load of 180, a fresh / under-trained workload band. Conditions where you train: training is logged around Example Park; the latest session ran at 22C and 55% humidity; heat acclimation reads 35%.\n\nYour recent training load sits in the Fresh / Under-trained band: you have room to add training, and little injury risk in doing so. Your measured fitness age is 2 years younger than your real age of 35.",
+    "actionable_directives": [
+      "Cardiovascular / Physical Target: green light for high-intensity interval training, heavy resistance work, or high-volume Zone 2 cardio.",
+      "Cognitive Demand: schedule your most demanding deep-work sessions before the afternoon and protect 90-minute blocks.",
+      "Caffeine Cutoff: stop caffeine at least 8 hours before your recommended bedtime (see the sleep architecture card).",
+      "Sleep Hygiene: begin a screen-free wind-down 30 minutes before your recommended bedtime to protect REM duration.",
+      "Hydration & Heat: your daily target is 2.2L, the latest logged session sweated 420 ml, heat acclimation reads 35%."
+    ]
+  },
+  "today_summary": {
+    "window_label": "31 Jan, 08:00 UTC",
+    "steps": {
+      "count": 7800,
+      "goal": 8000,
+      "pct": 98,
+      "pct_display": "98% of goal",
+      "yesterday_count": 6700,
+      "yesterday_goal": 8000
+    },
+    "movement": {
+      "sessions": 0,
+      "sessions_display": "0 sessions",
+      "minutes": null,
+      "categories": [],
+      "latest": null
+    },
+    "sleep": {
+      "score": 78,
+      "hours": 7.5,
+      "formatted": "7h 30m",
+      "baseline_hours": 7.5,
+      "pct_of_baseline": 100
+    }
+  },
+  "oxygen": {
+    "available": true,
+    "latest": 97,
+    "latest_date": "2025-01-29",
+    "latest_clock": null,
+    "sleep_average": 96.0,
+    "sleep_nights": 1,
+    "lowest": 94,
+    "lowest_date": "2025-01-29",
+    "dip_flagged": false,
+    "days_recorded": 1,
+    "window_days": 120,
+    "coverage_pct": 1,
+    "band": "normal",
+    "band_label": "In Range",
+    "band_tone": "green",
+    "plain": "your blood oxygen stayed in the normal range while you slept",
+    "series": [
+      {
+        "date": "2025-01-29",
+        "value": 97
+      }
+    ]
+  },
+  "environment": {
+    "available": true,
+    "home_location": "Example Park",
+    "last_location": "Example Park",
+    "locations": [
+      {
+        "name": "Example Park",
+        "sessions": 1,
+        "first": "2025-01-30",
+        "last": "2025-01-30"
+      }
+    ],
+    "away_stays": [],
+    "away_sessions": 0,
+    "weather": {
+      "temp_c": 22.0,
+      "feels_like_c": 22.0,
+      "humidity_pct": 55,
+      "dew_point_c": 12.0,
+      "station": "Demo Station"
+    },
+    "hot_session": false,
+    "humid_session": false,
+    "heat_acclimation_pct": 35,
+    "heat_band": "partial",
+    "heat_label": "Partly Acclimated",
+    "heat_tone": "amber",
+    "heat_plain": "you are part-way through adapting to heat, so expect a slightly higher heart rate outdoors",
+    "hydration": {
+      "goal_ml": 2200,
+      "intake_ml": 1800,
+      "sweat_loss_ml": 420,
+      "intake_pct": 82
+    }
+  },
+  "capacity": {
+    "available": true,
+    "age_years": 35,
+    "gender": "OTHER",
+    "height_cm": 175.0,
+    "weight_kg": 72.0,
+    "bmi": 23.5,
+    "bmi_band": "normal",
+    "bmi_label": "In Range",
+    "bmi_tone": "green",
+    "vo2max": 42.0,
+    "lactate_threshold_hr": 158,
+    "activity_level": null,
+    "devices": [
+      {
+        "name": "Demo Watch",
+        "primary": true
+      }
+    ],
+    "race_predictions": [
+      {
+        "label": "5K",
+        "seconds": 1800,
+        "formatted": "30:00"
+      },
+      {
+        "label": "10K",
+        "seconds": 3800,
+        "formatted": "1h 03m"
+      },
+      {
+        "label": "Half",
+        "seconds": 8400,
+        "formatted": "2h 20m"
+      },
+      {
+        "label": "Marathon",
+        "seconds": 18000,
+        "formatted": "5h 00m"
+      }
+    ],
+    "race_source_date": "2025-01-31",
+    "intensity": {
+      "weekly_total": 96,
+      "moderate": 76,
+      "vigorous": 10,
+      "goal": 150,
+      "band": "partial",
+      "label": "Partly There",
+      "tone": "amber",
+      "plain": "you are part of the way to the weekly moderate-intensity guideline"
+    },
+    "day": {
+      "steps": 7800,
+      "step_goal": 8000,
+      "floors": 6,
+      "active_kcal": 410,
+      "total_kcal": 1900
+    },
+    "date": "2025-01-31",
+    "trend": {
+      "available": true,
+      "window": {
+        "start": "2025-01-24",
+        "end": "2025-01-30",
+        "days_measured": 7,
+        "label": "24-30 Jan",
+        "end_label": "30 Jan"
+      },
+      "week": {
+        "mean_steps": 6986,
+        "days_measured": 7,
+        "days_met_goal": 1,
+        "goal": 8000,
+        "pct_of_goal": 87,
+        "prior_mean_steps": 7414,
+        "change_pct": -6
+      },
+      "month": {
+        "mean_steps": 7200,
+        "days_measured": 30
+      },
+      "heart": {
+        "median_steps": 7200,
+        "high_days": 12,
+        "low_days": 18,
+        "rhr_high": 57.8,
+        "rhr_low": 57.6,
+        "hrv_high": 56.0,
+        "hrv_low": 55.3
+      },
+      "plain": "Over the 7 measured days to 30 Jan you averaged 6,986 steps a day, 6% below the week before, and reached your 8,000-step goal on 1 of them. Across the last 30 measured days the average is 7,200 steps."
+    }
+  },
+  "correlations": {
+    "findings": [
+      {
+        "metric_a": "rhr",
+        "metric_b": "sleep_hours",
+        "label_a": "resting heart rate (bpm)",
+        "label_b": "sleep duration (hours)",
+        "r": 1.0,
+        "days": 120,
+        "strength": "strong",
+        "direction": "higher",
+        "plain": "Shorter nights leave your resting pulse higher the next morning.",
+        "note": "Sleep length and resting heart rate move against each other: shorter nights leave a higher resting heart rate the next morning."
+      },
+      {
+        "metric_a": "hrv",
+        "metric_b": "rhr",
+        "label_a": "overnight HRV (ms)",
+        "label_b": "resting heart rate (bpm)",
+        "r": 0.49,
+        "days": 120,
+        "strength": "modest",
+        "direction": "higher",
+        "plain": "Better recovery reads as a slower resting pulse — these two dials move against each other.",
+        "note": "The two classic recovery dials moved together here. The usual reading is that a higher HRV comes with a lower resting heart rate, so a negative relationship between them is the expected one."
+      }
+    ],
+    "tested_pairs": 9,
+    "window_days": 120,
+    "min_days": 14,
+    "min_r": 0.35,
+    "caveat": "Each pattern is calculated from your own paired days. It shows how two readings moved together over the window; it does not establish that one caused the other.",
+    "skipped": [
+      {
+        "pair": [
+          "hrv",
+          "sleep_score"
+        ],
+        "days": 120,
+        "r": 0.16
+      },
+      {
+        "pair": [
+          "deep_pct",
+          "hrv"
+        ],
+        "days": 120,
+        "r": null
+      },
+      {
+        "pair": [
+          "rhr",
+          "steps"
+        ],
+        "days": 120,
+        "r": 0.0
+      },
+      {
+        "pair": [
+          "respiration",
+          "hrv"
+        ],
+        "days": 120,
+        "r": null
+      },
+      {
+        "pair": [
+          "sleep_stress",
+          "hrv"
+        ],
+        "days": 120,
+        "r": null
+      },
+      {
+        "pair": [
+          "spo2",
+          "hrv"
+        ],
+        "days": 1,
+        "r": null
+      },
+      {
+        "pair": [
+          "hrv",
+          "steps"
+        ],
+        "days": 120,
+        "r": 0.0
+      }
+    ],
+    "location": null,
+    "night_contrasts": null
+  },
+  "coaching": {
+    "available": true,
+    "generated_for": "2025-01-31",
+    "window_days": 28,
+    "focus": {
+      "key": "walking",
+      "title": "Walking & Daily Movement",
+      "tone": "amber",
+      "action": "Add one 15-minute walk on your two lowest days (your weakest day was 6,200 steps on 2025-01-24). That is the shortest path to 5 days above 8,000.",
+      "plain": "you walk about 6,986 steps a day; the mortality curve flattens near 8,000, so the goal is consistency rather than a bigger number",
+      "basis": "7 days of step totals"
+    },
+    "cards": [
+      {
+        "key": "recovery",
+        "title": "Recovery & Load Management",
+        "science": "Autonomic readiness and ACWR",
+        "measured": true,
+        "tone": "green",
+        "basis": "readiness 99 | ratio 0.27",
+        "verdict": "Readiness is 99 (prime), load ratio 0.27 (Fresh / Under-trained), HRV Below Baseline.",
+        "plain": "this is the decision that gates every other card: the recovery reading says how much today can hold, so it is read before the training ones",
+        "action": "Today is a green light: this is the session to spend on the hardest work of your week.",
+        "progression": "Keep the ratio inside 0.8-1.3: raise load only after a week that ended green, and back off the moment a red morning follows a hard day.",
+        "guardrail": "Two hard days in a row is the pattern that most often precedes a dip in HRV -- when the second morning is below baseline, make that day easy whatever the plan said.",
+        "metrics": [
+          {
+            "label": "Readiness",
+            "value": "99",
+            "tone": "green"
+          },
+          {
+            "label": "Load ratio",
+            "value": "0.27",
+            "tone": "green"
+          },
+          {
+            "label": "Ratio band",
+            "value": "Fresh / Under-trained",
+            "tone": "slate"
+          },
+          {
+            "label": "HRV band",
+            "value": "Below Baseline",
+            "tone": "slate"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "hrv_guided",
+            "claim": "Let the morning reading decide whether today is hard or easy.",
+            "source": "Vesterinen V et al. Med Sci Sports Exerc 2016;48(7):1347-1354; Manresa-Rocamora A et al. Int J Environ Res Public Health 2021;18(19):10206.",
+            "finding": "Prescribing hard days by HRV produced equal or better performance than a fixed plan and fewer negative responses in vagal HRV.",
+            "caveat": "Duking et al. (2021) found the performance advantage small and in some analyses non-significant; the recovery benefit is the better-evidenced half."
+          },
+          {
+            "id": "load_ratio",
+            "claim": "Keep the week-on-week load ratio inside the 0.8-1.3 band.",
+            "source": "Gabbett TJ. The training-injury prevention paradox. Br J Sports Med 2016;50:273-280.",
+            "finding": "Sustaining an acute:chronic workload ratio near 0.8-1.3 was associated with the lowest injury risk; sharp spikes above it were not.",
+            "caveat": "Contested ground. Zouhal et al. (2021) and Maupin et al. (2020) find the band plausible but the evidence inconsistent, so this app treats it as a guide rail rather than a verdict."
+          }
+        ],
+        "visual": {
+          "kind": "level",
+          "value": 99,
+          "max": 100,
+          "pct": 99,
+          "caption": "readiness out of 100",
+          "tone": "green"
+        }
+      },
+      {
+        "key": "strength",
+        "title": "Strength & Muscle",
+        "science": "Resistance-training frequency",
+        "measured": false,
+        "tone": "slate",
+        "basis": "no resistance sessions in the last 28 days",
+        "verdict": "No strength session is in your own record, so there is nothing to prescribe from.",
+        "plain": "this card fills itself in from your first logged session, rather than guessing a routine",
+        "action": "Log one session -- even 20 minutes -- and the next run turns this into a real prescription.",
+        "progression": "--",
+        "guardrail": "--",
+        "metrics": [],
+        "evidence": [
+          {
+            "id": "strength_frequency",
+            "claim": "Train each major muscle group at least twice a week.",
+            "source": "Schoenfeld BJ, Ogborn D, Krieger JW. Effects of resistance training frequency on measures of muscle hypertrophy. Sports Med 2016;46(11):1689-1697.",
+            "finding": "When weekly volume was matched, training a muscle group twice or more per week produced more growth than once.",
+            "caveat": "Total weekly volume still matters more than how it is split; frequency is the easier lever when only a few sessions happen."
+          }
+        ],
+        "visual": null
+      },
+      {
+        "key": "endurance",
+        "title": "Running & Hard Cardio",
+        "science": "Aerobic load and intensity",
+        "measured": true,
+        "tone": "green",
+        "basis": "1 sessions, 32 min in 28 days",
+        "verdict": "You ran or rode 8 minutes a week across 1 sessions (about 32 minutes each), below the 150-minute weekly floor.",
+        "plain": "you get about 8 hard-cardio minutes a week; the health floor is 150, and the fitness gains come from adding easy minutes rather than turning every run into a race",
+        "action": "Add one easy 30-minute session before the weekend. Your ratio is 0.27 (Fresh / Under-trained), which means this week has room in it.",
+        "progression": "Add no more than one session or about 10% of weekly minutes at a time, then hold it for two weeks before the next increase.",
+        "guardrail": "On a day when HRV sits below your baseline, keep the session but make it easy: that is what HRV-guided prescription buys you. Skip hard intervals outright if readiness is red.",
+        "metrics": [
+          {
+            "label": "Minutes / week",
+            "value": "8",
+            "tone": "green"
+          },
+          {
+            "label": "Sessions",
+            "value": 1,
+            "tone": "slate"
+          },
+          {
+            "label": "Distance",
+            "value": "5.2 km",
+            "tone": "slate"
+          },
+          {
+            "label": "Load ratio",
+            "value": "0.27",
+            "tone": "green"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "load_ratio",
+            "claim": "Keep the week-on-week load ratio inside the 0.8-1.3 band.",
+            "source": "Gabbett TJ. The training-injury prevention paradox. Br J Sports Med 2016;50:273-280.",
+            "finding": "Sustaining an acute:chronic workload ratio near 0.8-1.3 was associated with the lowest injury risk; sharp spikes above it were not.",
+            "caveat": "Contested ground. Zouhal et al. (2021) and Maupin et al. (2020) find the band plausible but the evidence inconsistent, so this app treats it as a guide rail rather than a verdict."
+          },
+          {
+            "id": "hrv_guided",
+            "claim": "Let the morning reading decide whether today is hard or easy.",
+            "source": "Vesterinen V et al. Med Sci Sports Exerc 2016;48(7):1347-1354; Manresa-Rocamora A et al. Int J Environ Res Public Health 2021;18(19):10206.",
+            "finding": "Prescribing hard days by HRV produced equal or better performance than a fixed plan and fewer negative responses in vagal HRV.",
+            "caveat": "Duking et al. (2021) found the performance advantage small and in some analyses non-significant; the recovery benefit is the better-evidenced half."
+          },
+          {
+            "id": "intensity_guideline",
+            "claim": "Aim for 150 moderate-intensity minutes a week as a floor.",
+            "source": "WHO guidelines on physical activity and sedentary behaviour, 2020.",
+            "finding": "150-300 minutes of moderate or 75-150 minutes of vigorous activity per week is the recommended range for adults.",
+            "caveat": "This is a public-health floor for health outcomes, not a performance prescription for someone already training."
+          }
+        ],
+        "visual": {
+          "kind": "week",
+          "unit": "min",
+          "caption": "minutes a day",
+          "target": null,
+          "target_pct": null,
+          "bars": [
+            {
+              "date": "2025-01-25",
+              "label": "S",
+              "value": 0.0,
+              "pct": 0
+            },
+            {
+              "date": "2025-01-26",
+              "label": "S",
+              "value": 0.0,
+              "pct": 0
+            },
+            {
+              "date": "2025-01-27",
+              "label": "M",
+              "value": 0.0,
+              "pct": 0
+            },
+            {
+              "date": "2025-01-28",
+              "label": "T",
+              "value": 0.0,
+              "pct": 0
+            },
+            {
+              "date": "2025-01-29",
+              "label": "W",
+              "value": 0.0,
+              "pct": 0
+            },
+            {
+              "date": "2025-01-30",
+              "label": "T",
+              "value": 32.0,
+              "pct": 100
+            },
+            {
+              "date": "2025-01-31",
+              "label": "F",
+              "value": 0.0,
+              "pct": 0
+            }
+          ],
+          "tone": "green"
+        }
+      },
+      {
+        "key": "walking",
+        "title": "Walking & Daily Movement",
+        "science": "Step volume",
+        "measured": true,
+        "tone": "amber",
+        "basis": "7 days of step totals",
+        "verdict": "You averaged 6,986 steps a day over the last week, clearing 8,000 on 1 of 7 days.",
+        "plain": "you walk about 6,986 steps a day; the mortality curve flattens near 8,000, so the goal is consistency rather than a bigger number",
+        "action": "Add one 15-minute walk on your two lowest days (your weakest day was 6,200 steps on 2025-01-24). That is the shortest path to 5 days above 8,000.",
+        "progression": "Raise the floor rather than the average: get the weakest two days of the week above the target before chasing a new daily best.",
+        "guardrail": "Steps are a floor, not a training session -- do not let a long walk eat the recovery a hard session needs.",
+        "metrics": [
+          {
+            "label": "Steps / day",
+            "value": "6,986",
+            "tone": "amber"
+          },
+          {
+            "label": "Days on target",
+            "value": "1 of 7",
+            "tone": "slate"
+          },
+          {
+            "label": "28-day average",
+            "value": "7,146",
+            "tone": "slate"
+          },
+          {
+            "label": "Trend",
+            "value": "-2%",
+            "tone": "slate"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "steps_mortality",
+            "claim": "Walk towards 8,000 steps a day rather than 10,000 for its own sake.",
+            "source": "Paluch AE et al. Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. Lancet Public Health 2022;7(3):e219-e228.",
+            "finding": "Mortality risk fell with more daily steps and levelled off around 6,000-8,000 in older adults and 8,000-10,000 in younger ones.",
+            "caveat": "Observational, and the plateau differs by age -- the step goal here is the 8,000 end of that range, not a hard threshold."
+          },
+          {
+            "id": "intensity_guideline",
+            "claim": "Aim for 150 moderate-intensity minutes a week as a floor.",
+            "source": "WHO guidelines on physical activity and sedentary behaviour, 2020.",
+            "finding": "150-300 minutes of moderate or 75-150 minutes of vigorous activity per week is the recommended range for adults.",
+            "caveat": "This is a public-health floor for health outcomes, not a performance prescription for someone already training."
+          }
+        ],
+        "visual": {
+          "kind": "week",
+          "unit": "steps",
+          "caption": "steps a day",
+          "target": 8000.0,
+          "target_pct": 98,
+          "bars": [
+            {
+              "date": "2025-01-24",
+              "label": "F",
+              "value": 6200.0,
+              "pct": 76
+            },
+            {
+              "date": "2025-01-25",
+              "label": "S",
+              "value": 6700.0,
+              "pct": 82
+            },
+            {
+              "date": "2025-01-26",
+              "label": "S",
+              "value": 7200.0,
+              "pct": 88
+            },
+            {
+              "date": "2025-01-27",
+              "label": "M",
+              "value": 7700.0,
+              "pct": 94
+            },
+            {
+              "date": "2025-01-28",
+              "label": "T",
+              "value": 8200.0,
+              "pct": 100
+            },
+            {
+              "date": "2025-01-29",
+              "label": "W",
+              "value": 6200.0,
+              "pct": 76
+            },
+            {
+              "date": "2025-01-30",
+              "label": "T",
+              "value": 6700.0,
+              "pct": 82
+            }
+          ],
+          "tone": "amber"
+        }
+      },
+      {
+        "key": "hiking",
+        "title": "Hiking & Hills",
+        "science": "Grade-adjusted load",
+        "measured": false,
+        "tone": "slate",
+        "basis": "no hiking sessions in the last 28 days",
+        "verdict": "No hike with a logged climb is in your record for this window.",
+        "plain": "hill training has no history here yet, so there is no climb to progress from",
+        "action": "Log one hike with elevation data and this becomes a hill-fitness plan.",
+        "progression": "--",
+        "guardrail": "--",
+        "metrics": [],
+        "evidence": [
+          {
+            "id": "grade_cost",
+            "claim": "Judge a hike by its climb, not its distance.",
+            "source": "Minetti AE, Moia C, Roi GS, Susta D, Ferretti G. Energy cost of walking and running at extreme uphill and downhill slopes. J Appl Physiol 2002;93(3):1039-1046.",
+            "finding": "Metabolic cost rises steeply with gradient in both gaits, with the most economical mountain-path gradient around 0.20-0.30.",
+            "caveat": "Measured on a treadmill; rough ground costs more than the same gradient on a belt."
+          },
+          {
+            "id": "heat_acclimation",
+            "claim": "Heat fitness fades fast: it needs roughly weekly exposure to stay.",
+            "source": "Daanen HAM, Racinais S, Periard JD. Heat acclimation decay and re-induction. Sports Med 2018;48(2):409-430.",
+            "finding": "Five or more heat days produce stable adaptations, and without exposure end-exercise heart rate decays about 2.3% and core temperature about 2.6% per day.",
+            "caveat": "Decay figures come mostly from laboratory protocols, so treat the rate as an order of magnitude."
+          }
+        ],
+        "visual": null
+      },
+      {
+        "key": "sleep",
+        "title": "Sleep",
+        "science": "Sleep extension and regularity",
+        "measured": true,
+        "tone": "green",
+        "basis": "123 nights",
+        "verdict": "You averaged 7.3 h a night over the last week, carrying 1.5 h of debt, with bedtime moving about 0 minutes night to night.",
+        "plain": "you sleep about 7.3 hours a night and owe yourself roughly 1.5 hours this week; going to bed at the same time is worth as much as going to bed earlier",
+        "action": "Hold this: length and timing are both steady, so the return now comes from protecting the sleep you already get on training days.",
+        "progression": "Add 15 minutes to the front of the night for a week, not an hour at once -- it is the bedtime that moves, not the wake time.",
+        "guardrail": "Do not trade sleep for a session: the performance cost of a short night is larger than the gain from the extra training.",
+        "metrics": [
+          {
+            "label": "Sleep / night",
+            "value": "7.3 h",
+            "tone": "green"
+          },
+          {
+            "label": "7-day debt",
+            "value": "1.5 h",
+            "tone": "slate"
+          },
+          {
+            "label": "Bedtime",
+            "value": "23:00",
+            "tone": "slate"
+          },
+          {
+            "label": "Bedtime spread",
+            "value": "0 min",
+            "tone": "slate"
+          },
+          {
+            "label": "Deep sleep",
+            "value": "22.0%",
+            "tone": "slate"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "sleep_extension",
+            "claim": "Repay sleep debt by extending the night, not by training through it.",
+            "source": "Mah CD et al. The effects of sleep extension on the athletic performance of collegiate basketball players. Sleep 2011;34(7):943-950.",
+            "finding": "Several weeks of extra sleep improved sprint times, shooting accuracy, reaction time and mood.",
+            "caveat": "Small sample (11 players) and self-selected extension, so the size of the effect is less certain than its direction."
+          },
+          {
+            "id": "sleep_regularity",
+            "claim": "A steady bedtime is worth chasing even when the total is short.",
+            "source": "Windred DP et al. Sleep regularity is a stronger predictor of mortality risk than sleep duration. Sleep 2024;47(1):zsad253.",
+            "finding": "Across ~60,000 UK Biobank participants, sleep regularity predicted all-cause mortality more strongly than sleep duration did.",
+            "caveat": "Observational: regular sleepers differ in other ways that no model fully removes."
+          }
+        ],
+        "visual": {
+          "kind": "week",
+          "unit": "h",
+          "caption": "hours a night",
+          "target": 7.5,
+          "target_pct": 97,
+          "bars": [
+            {
+              "date": "2025-01-24",
+              "label": "F",
+              "value": 7.75,
+              "pct": 100
+            },
+            {
+              "date": "2025-01-25",
+              "label": "S",
+              "value": 7.0,
+              "pct": 90
+            },
+            {
+              "date": "2025-01-26",
+              "label": "S",
+              "value": 7.25,
+              "pct": 94
+            },
+            {
+              "date": "2025-01-27",
+              "label": "M",
+              "value": 7.5,
+              "pct": 97
+            },
+            {
+              "date": "2025-01-28",
+              "label": "T",
+              "value": 7.75,
+              "pct": 100
+            },
+            {
+              "date": "2025-01-29",
+              "label": "W",
+              "value": 7.0,
+              "pct": 90
+            },
+            {
+              "date": "2025-01-30",
+              "label": "T",
+              "value": 7.25,
+              "pct": 94
+            }
+          ],
+          "tone": "cyan"
+        }
+      }
+    ],
+    "patterns": [
+      {
+        "key": "weekly_rhythm",
+        "label": "Your training rhythm",
+        "finding": "Thursday carries the most load (100% of it), across 1 training days in the last 120 -- 0.1 sessions and 2 minutes of measured training a week.",
+        "plain": "knowing which day already carries your hardest work is what stops a new session landing on top of it",
+        "pairs": 17,
+        "tone": "cyan",
+        "kind": "association"
+      }
+    ],
+    "week": {
+      "sessions": 1,
+      "train_days": 1,
+      "minutes": 32,
+      "steps_mean_7d": 6986,
+      "steps_days_met": 1,
+      "sleep_hours_7d": 7.32,
+      "lightest_day": "Monday"
+    },
+    "pattern_caveat": "Each pattern is calculated from your own paired days. It shows how two readings moved together over the window; it does not establish that one caused the other."
+  },
+  "data_quality": {
+    "metrics": {
+      "sleep": {
+        "key": "sleep",
+        "label": "Sleep architecture",
+        "source": "demo",
+        "note": "synthetic demonstration value"
+      },
+      "rhr": {
+        "key": "rhr",
+        "label": "Resting heart rate",
+        "source": "demo",
+        "note": "synthetic demonstration value"
+      },
+      "hrv": {
+        "key": "hrv",
+        "label": "Overnight HRV",
+        "source": "demo",
+        "note": "synthetic demonstration value"
+      },
+      "circadian": {
+        "key": "circadian",
+        "label": "Circadian sleep-onset timing",
+        "source": "demo",
+        "note": "synthetic demonstration value"
+      },
+      "stress_distribution": {
+        "key": "stress_distribution",
+        "label": "24-hour stress distribution",
+        "source": "demo",
+        "note": "synthetic demonstration value"
+      },
+      "body_battery": {
+        "key": "body_battery",
+        "label": "Body Battery",
+        "source": "demo",
+        "note": "synthetic demonstration value"
+      },
+      "user_summary": {
+        "key": "user_summary",
+        "label": "Steps & daily stress average",
+        "source": "demo",
+        "note": "synthetic demonstration value"
+      }
+    },
+    "degraded": [],
+    "live_count": 0,
+    "total_count": 7,
+    "live_pct": 0,
+    "core_degraded": [],
+    "demo": true
+  },
+  "muscles": {
+    "available": false,
+    "sets_classified": 0,
+    "sets_unclassified": 0,
+    "session_days": 0,
+    "groups": [
+      {
+        "key": "chest",
+        "label": "Chest",
+        "sessions": 0,
+        "sets": 0,
+        "last_date": null,
+        "days_since": null,
+        "band": "unmeasured",
+        "band_label": "Not measured",
+        "tone": "slate"
+      },
+      {
+        "key": "back",
+        "label": "Back",
+        "sessions": 0,
+        "sets": 0,
+        "last_date": null,
+        "days_since": null,
+        "band": "unmeasured",
+        "band_label": "Not measured",
+        "tone": "slate"
+      },
+      {
+        "key": "shoulders",
+        "label": "Shoulders",
+        "sessions": 0,
+        "sets": 0,
+        "last_date": null,
+        "days_since": null,
+        "band": "unmeasured",
+        "band_label": "Not measured",
+        "tone": "slate"
+      },
+      {
+        "key": "biceps",
+        "label": "Biceps",
+        "sessions": 0,
+        "sets": 0,
+        "last_date": null,
+        "days_since": null,
+        "band": "unmeasured",
+        "band_label": "Not measured",
+        "tone": "slate"
+      },
+      {
+        "key": "triceps",
+        "label": "Triceps",
+        "sessions": 0,
+        "sets": 0,
+        "last_date": null,
+        "days_since": null,
+        "band": "unmeasured",
+        "band_label": "Not measured",
+        "tone": "slate"
+      },
+      {
+        "key": "core",
+        "label": "Core & Abs",
+        "sessions": 0,
+        "sets": 0,
+        "last_date": null,
+        "days_since": null,
+        "band": "unmeasured",
+        "band_label": "Not measured",
+        "tone": "slate"
+      },
+      {
+        "key": "glutes",
+        "label": "Glutes",
+        "sessions": 0,
+        "sets": 0,
+        "last_date": null,
+        "days_since": null,
+        "band": "unmeasured",
+        "band_label": "Not measured",
+        "tone": "slate"
+      },
+      {
+        "key": "quads",
+        "label": "Quadriceps",
+        "sessions": 0,
+        "sets": 0,
+        "last_date": null,
+        "days_since": null,
+        "band": "unmeasured",
+        "band_label": "Not measured",
+        "tone": "slate"
+      },
+      {
+        "key": "hamstrings",
+        "label": "Hamstrings",
+        "sessions": 0,
+        "sets": 0,
+        "last_date": null,
+        "days_since": null,
+        "band": "unmeasured",
+        "band_label": "Not measured",
+        "tone": "slate"
+      },
+      {
+        "key": "calves",
+        "label": "Calves",
+        "sessions": 0,
+        "sets": 0,
+        "last_date": null,
+        "days_since": null,
+        "band": "unmeasured",
+        "band_label": "Not measured",
+        "tone": "slate"
+      }
+    ]
+  },
+  "demo": {
+    "synthetic": true,
+    "label": "Synthetic demo data — not connected to Garmin"
+  }
+}
