@@ -21,6 +21,7 @@ payload reported a score of 68 alongside a "YELLOW" label.
 
 DISPLAY_OFFSET_MINUTES = 0
 TARGET_WAKE_MINUTES = 7 * 60  # 07:00 UTC
+RETENTION_DAYS = 60
 
 # --- model coefficients ----------------------------------------------------
 

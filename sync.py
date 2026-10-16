@@ -57,14 +57,14 @@ def collect(client, dq):
     """
     today_str = date.today().isoformat()
     profile = source.fetch_profile(client, today_str, dq)
-    activities = source.fetch_recent_activities(client, limit=90, dq=dq)
+    activities = source.fetch_recent_activities(client, limit=policy.RETENTION_DAYS, dq=dq)
     intensity, races = source.fetch_intensity_and_races(client, today_str, None, dq)
     return {
         "today_str": today_str,
         "profile": profile,
         "rhr": source.fetch_multi_year_rhr(client, dq),
         "hrv": source.fetch_multi_year_hrv(client, dq),
-        "sleep": source.fetch_sleep_history(client, days=210, dq=dq),
+        "sleep": source.fetch_sleep_history(client, days=policy.RETENTION_DAYS, dq=dq),
         "fitness": source.fetch_fitness_and_workload(client, today_str, profile, dq),
         "activities": activities,
         "location": source.fetch_activity_context(client, activities, dq),
@@ -266,10 +266,10 @@ def build_payload(client, fetched, dq):
                     # reading a second verdict.
                     **night_bands.get(h.get("calendarDate"), {}),
                 }
-                for h in all_hrv[-210:]
+                    for h in all_hrv[-policy.RETENTION_DAYS:]
             ],
             "daily_rhr": [
-                {"date": r.get("calendarDate"), "rhr": r.get("value")} for r in all_rhr[-210:]
+                {"date": r.get("calendarDate"), "rhr": r.get("value")} for r in all_rhr[-policy.RETENTION_DAYS:]
             ],
             "rhr_multi_year": rhr_multi_year,
             "activities": activities,

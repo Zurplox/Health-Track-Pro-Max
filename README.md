@@ -30,6 +30,8 @@ fail safely; no fallback passwords or tokens exist.
 - The public payload is synthetic only.
 - Personal plaintext data and Garmin caches are ignored.
 - Live encrypted data is generated only in a user's private fork.
+- Published history is limited to the latest 60 days; older data is not archived
+  into the public repository.
 - Never commit passwords, tokens, session files, or health exports.
 
 ## Checks
