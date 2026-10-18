@@ -1,15 +1,10 @@
 name: Daily Biometrics Sync & AI Analysis
 
 on:
-  schedule:
-    # Daily UTC schedule.
-    - cron: '0 0 * * *'
-    # Catch-up run for delayed sleep finalization.
-    - cron: '30 0 * * *'
+  # Automatic scheduled sync is disabled. Run manually when needed.
   workflow_dispatch:
 
-# The 00:00 and 00:30 UTC schedules can overlap because a full sync takes
-# several minutes; serialise them so two runners never race to push.
+# Manual runs remain serialized so two dispatches cannot race to push.
 concurrency:
   group: biometrics-sync
   cancel-in-progress: false
