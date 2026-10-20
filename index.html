@@ -797,7 +797,15 @@
             </svg>
           </button>
 
-          <!-- Manual Refresh Button -->
+           <!-- Manual Refresh Button -->
+          <label
+            class="px-3 py-1.5 rounded-lg bg-violet-500/10 hover:bg-violet-500/20 border border-violet-500/30 text-violet-300 text-xs font-medium flex items-center gap-1.5 transition cursor-pointer"
+            title="Load a local CSV or JSON fitness export into this browser only"
+          >
+            <span aria-hidden="true">↥</span>
+            <span>Upload Data</span>
+            <input id="demoUploadInput" type="file" accept=".csv,.json,text/csv,application/json" class="sr-only" onchange="handleDemoUpload(event)" />
+          </label>
           <button
             type="button"
             id="refreshBtn"
@@ -4116,6 +4124,59 @@
         console.error(err);
         errorDiv.textContent = "Synthetic demo data could not be loaded.";
         errorDiv.classList.remove("hidden");
+      }
+    }
+
+    function parseDemoCsv(text) {
+      const lines = text.trim().split(/\r?\n/).filter(Boolean);
+      if (lines.length < 2) throw new Error("CSV needs a header row and at least one record.");
+      const headers = lines.shift().split(",").map(h => h.trim().toLowerCase());
+      const rows = lines.map(line => {
+        const values = line.split(",");
+        return Object.fromEntries(headers.map((header, index) => [header, values[index]?.trim() || ""]));
+      });
+      const dateKey = headers.find(key => ["date", "calendar_date", "timestamp", "start_time"].includes(key));
+      const stepsKey = headers.find(key => ["steps", "step_count"].includes(key));
+      const hrKey = headers.find(key => ["heart_rate", "hr", "average_hr", "avg_heart_rate"].includes(key));
+      const activities = rows.filter(row => dateKey && row[dateKey]).map(row => ({
+        date: row[dateKey].slice(0, 10),
+        name: "Uploaded activity",
+        type: "Activity",
+        duration_min: Number(row.duration_min || row.duration || 0),
+        calories: Number(row.calories || 0),
+        average_hr: Number(row[hrKey] || 0)
+      }));
+      const steps = rows.filter(row => dateKey && row[dateKey]).map(row => ({
+        date: row[dateKey].slice(0, 10),
+        steps: Number(row[stepsKey] || 0)
+      }));
+      if (!activities.length) throw new Error("No dated records found in the CSV.");
+      return {
+        ...globalBioData,
+        demo: { synthetic: false, uploaded: true },
+        athlete: { ...(globalBioData?.athlete || {}), name: "Uploaded Data", display_name: "uploaded" },
+        updated_at: new Date().toISOString(),
+        history: { ...(globalBioData?.history || {}), activities, steps },
+        today: { ...(globalBioData?.today || {}), steps: steps.at(-1)?.steps || 0 }
+      };
+    }
+
+    async function handleDemoUpload(event) {
+      const file = event.target.files?.[0];
+      if (!file) return;
+      try {
+        const text = await file.text();
+        const parsed = file.name.toLowerCase().endsWith(".json") ? JSON.parse(text) : parseDemoCsv(text);
+        globalBioData = payloadWithoutEmoji(parsed);
+        document.getElementById("mainDashboard").classList.remove("hidden");
+        document.getElementById("lockScreen").classList.add("hidden");
+        renderDashboard(globalBioData);
+      } catch (err) {
+        const errorDiv = document.getElementById("authError");
+        errorDiv.textContent = `Upload failed: ${err.message}`;
+        errorDiv.classList.remove("hidden");
+      } finally {
+        event.target.value = "";
       }
     }
 
